@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Mercedes Araly</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <audio id="musica-fondo" loop>
+        <source src="dime-padre.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- EL NUEVO SELLO / TELÓN DE ENTRADA -->
+    <div id="pantalla-sello" class="pantalla-sello">
+        <div class="telon telon-izq"></div>
+        <div class="telon telon-der"></div>
+        <div class="sello-boton" id="btn-sello">
+            <div class="sello-circulo">
+                <i class="fa-solid fa-cross"></i>
+                <span>Abrir</span>
+            </div>
+            <div class="sello-anillo"></div>
+        </div>
+    </div>
+
+    <!-- PORTADA DINÁMICA -->
+    <div id="portada" class="portada">
+        <div class="portada-diagonal">
+            <!-- Iconos de fondo en la zona morada -->
+            <i class="fa-solid fa-dove icono-morado im-1"></i>
+            <i class="fa-solid fa-star icono-morado im-2"></i>
+            <i class="fa-solid fa-cross icono-morado im-3"></i>
+            <i class="fa-solid fa-heart icono-morado im-4"></i>
+        </div>
+
+        <div class="portada-grid">
+            <div class="portada-visual">
+                <!-- Espíritu Santo acomodado a la derecha -->
+                <img src="paloma.png" alt="Espíritu Santo" class="espiritu-santo-derecha anima-1" onerror="this.style.display='none'">
+
+                <!-- Foto de tu hermana PERFECTAMENTE REDONDA -->
+                <div class="marco-foto-circular anima-2">
+                    <img src="foto-hermana.jpg" alt="Mercedes Araly" class="img-hermana" onerror="this.src='https://via.placeholder.com/400x400/E19DB2/3A2335?text=Foto+Mercedes'">
+                </div>
+            </div>
+
+            <div class="portada-info">
+                <h2 class="pre-titulo sombra-texto anima-3">Parroquia de la Santa Cruz</h2>
+                <div class="linea-adorno anima-4"></div>
+                <p class="subtitulo sombra-texto anima-5">Te invito a mi Confirmación</p>
+                <h1 class="nombre sombra-texto anima-6">Mercedes Araly</h1>
+
+                <button id="btn-abrir" class="btn-abrir premium-btn anima-7">
+                    <span>Ver Invitación</span> <i class="fa-solid fa-arrow-right icon-movil-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INVITACIÓN (Aparece al deslizar) -->
+    <div id="invitacion" class="invitacion">
+
+        <!-- Figuras abstractas VIVAS Y FUERTES para rellenar los blancos -->
+        <div class="figura-abstracta fig-1"></div>
+        <div class="figura-abstracta fig-2"></div>
+        <div class="figura-abstracta fig-3"></div>
+        <div class="figura-abstracta fig-4"></div>
+
+        <!-- Iconos católicos tenues por todo el fondo blanco -->
+        <i class="fa-solid fa-dove decoracion-fondo dec-1"></i>
+        <i class="fa-solid fa-cross decoracion-fondo dec-2"></i>
+        <i class="fa-solid fa-church decoracion-fondo dec-3"></i>
+        <i class="fa-solid fa-star decoracion-fondo dec-4"></i>
+
+        <!-- SECCIÓN RELOJ -->
+        <section class="seccion reloj-section">
+            <div class="santisimo-container">
+                <img src="santisimo.png" alt="Santísimo" class="icono-santisimo" onerror="this.style.display='none'">
+            </div>
+
+            <h2 class="sombra-suave">Sábado 18 de Julio</h2>
+            <p class="cita sombra-suave">"El Espíritu Santo descenderá sobre ti."</p>
+
+            <div class="contador-container">
+                <div class="tiempo-box card-interactiva"><span id="dias" class="numero">00</span><p>Días</p></div>
+                <div class="tiempo-box card-interactiva"><span id="horas" class="numero">00</span><p>Hrs</p></div>
+                <div class="tiempo-box card-interactiva"><span id="minutos" class="numero">00</span><p>Min</p></div>
+                <div class="tiempo-box card-interactiva"><span id="segundos" class="numero">00</span><p>Seg</p></div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN LUGARES -->
+        <section class="seccion lugares-section">
+            <div class="grid-lugares">
+
+                <div class="card-lugar card-interactiva">
+                    <img src="parroquia.jpg" alt="Parroquia" class="foto-lugar" onerror="this.src='https://via.placeholder.com/500x300/6B3B59/ffffff?text=Foto+Parroquia'">
+                    <div class="info-lugar">
+                        <div class="icono-lugar"><i class="fa-solid fa-church"></i></div>
+                        <h3>Ceremonia Religiosa</h3>
+                        <p class="hora-destacada">12:00 hrs</p>
+                        <p class="direccion-texto">Parroquia de la Santa Cruz</p>
+
+                        <div class="mensaje-especial">
+                            <i class="fa-solid fa-dove icono-pequeno"></i>
+                            <p>La Santa Misa es el corazón de esta celebración. Acompáñame a recibir el gran don del Espíritu Santo, será el momento más importante de mi día.</p>
+                        </div>
+
+                        <a href="https://www.google.com/maps/@20.5173667,-103.1872908,3a,57.3y,262.91h,79.3t/data=!3m7!1e1!3m5!1sXmZb1T-EUd7kHUMpSOEVxg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D10.698771817894084%26panoid%3DXmZb1T-EUd7kHUMpSOEVxg%26yaw%3D262.9063656790109!7i16384!8i8192?entry=ttu" target="_blank" class="btn-mapa premium-btn mini">
+                            <i class="fa-solid fa-location-arrow"></i> Ver Ubicación
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-lugar card-interactiva">
+                    <img src="terraza.jpg" alt="Terraza" class="foto-lugar" onerror="this.src='https://via.placeholder.com/500x300/D87297/ffffff?text=Foto+Terraza'">
+                    <div class="info-lugar">
+                        <div class="icono-lugar"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <h3>Recepción y Comida</h3>
+                        <p class="hora-destacada">14:00 hrs</p>
+                        <p class="direccion-texto">Terraza Yunuen<br>Higuera 39a, Mesa de Los Laureles.</p>
+
+                        <div class="mensaje-especial">
+                            <i class="fa-solid fa-utensils icono-pequeno"></i>
+                            <p>Después de la ceremonia, me encantará compartir los alimentos contigo, disfrutar de una tarde de charlas, convivencia y festejar juntos este gran paso.</p>
+                        </div>
+
+                        <a href="https://www.google.com/maps/place/Terraza+Yunuen/@20.5271397,-103.1835707,17z" target="_blank" class="btn-mapa premium-btn mini">
+                            <i class="fa-solid fa-location-arrow"></i> Ver Ubicación
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DETALLES -->
+        <section class="seccion bloque-oscuro">
+            <h3 class="titulo-blanco"><i class="fa-solid fa-cross"></i> Detalles Importantes</h3>
+            <div class="grid-detalles">
+                <div class="detalle-box-oscuro card-interactiva">
+                    <i class="fa-solid fa-shirt icono-detalle-fuerte"></i>
+                    <h4>Vestimenta</h4>
+                    <p>Casual para estar cómodos.</p>
+                </div>
+                <div class="detalle-box-oscuro card-interactiva">
+                    <i class="fa-solid fa-water-ladder icono-detalle-fuerte"></i>
+                    <h4>Recomendación</h4>
+                    <p>Traje de baño (habrá alberca).</p>
+                </div>
+                <div class="detalle-box-oscuro card-interactiva">
+                    <i class="fa-solid fa-gift icono-detalle-fuerte"></i>
+                    <h4>Regalos</h4>
+                    <p>Sin mesa de regalos, ¡solo acompáñanos!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP SÚPER CENTRADO PARA CELULAR -->
+        <section class="seccion rsvp">
+            <div class="rsvp-card card-interactiva rsvp-premium">
+                <i class="fa-brands fa-whatsapp whatsapp-flotante"></i>
+                <div class="icono-corona"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <h2 class="sombra-texto">¡Espero contar contigo!</h2>
+                <div class="linea-adorno-blanca"></div>
+                <p>Tu presencia es súper importante para mí y mi familia en este día tan especial. Por favor, haz clic en el botón de abajo para confirmar tu asistencia.</p>
+
+                <div class="contenedor-boton-centrado">
+                    <a href="https://wa.link/a9dnbn" target="_blank" class="btn-whatsapp premium-btn pulso">
+                        <i class="fa-solid fa-check-double"></i> Confirmar Asistencia
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
